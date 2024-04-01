@@ -67,7 +67,12 @@ section {
     padding: 40px 0;
 }
 
-/* Style untuk slider */
+.profile-picture img {
+    max-width: 200px; /* Sesuaikan ukuran maksimum yang diinginkan */
+    max-height: 200px; /* Sesuaikan ukuran maksimum yang diinginkan */
+}
+
+
 .slider {
     position: relative;
 }
@@ -76,7 +81,7 @@ section {
     position: absolute;
     top: 20px; /* Sesuaikan sesuai kebutuhan */
     left: 20px; /* Sesuaikan sesuai kebutuhan */
-    color: white; /* atau warna apapun yang cocok dengan desain Anda */
+    color: rgb(0, 121, 221); /* atau warna apapun yang cocok dengan desain Anda */
     font-size: 24px; /* Sesuaikan sesuai kebutuhan */
     z-index: 10;
 }
@@ -99,7 +104,6 @@ section {
     object-fit: cover;
   }
   
-  /* Menghilangkan radio buttons */
   input[type="radio"] {
     position: absolute;
     visibility: hidden;
@@ -116,7 +120,6 @@ section {
     display: inline-block;
     margin: 0 5px;
     cursor: pointer;
-    /* Tambahkan lebih banyak styling sesuai dengan kebutuhan desain Anda */
 }
   
   .manual-btn {
