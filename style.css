@@ -57,11 +57,9 @@ header nav ul li a:hover {
     color: #f0f0f0; /* Warna berubah saat dihover */
 }
 
-
 header nav ul li:nth-child(3) a {
     color: #fff;
 }
-
 
 section {
     padding: 40px 0;
@@ -72,20 +70,18 @@ section {
     max-height: 200px; /* Sesuaikan ukuran maksimum yang diinginkan */
 }
 
-
 .slider {
     position: relative;
 }
 
 .welcome-text {
     position: absolute;
-    top: 20px; /* Sesuaikan sesuai kebutuhan */
-    left: 20px; /* Sesuaikan sesuai kebutuhan */
-    color: rgb(0, 121, 221); /* atau warna apapun yang cocok dengan desain Anda */
-    font-size: 24px; /* Sesuaikan sesuai kebutuhan */
+    top: 20px; /* Sesuaikan posisi vertikal */
+    left: 20px; /* Sesuaikan posisi horizontal */
+    color: rgb(0, 125, 234); /* Warna teks */
+    font-size: 24px; /* Ukuran font */
     z-index: 10;
 }
-
   
   .slides {
     width: 500%;
@@ -137,6 +133,11 @@ section {
   .manual-btn:hover {
     background: #40D3DC;
   }
+
+  #projects h2,
+#tools h2 {
+    text-align: center;
+}
   
 
 
