@@ -1,0 +1,261 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 60px;
+}
+
+header {
+    background: #07a4ff;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: hsl(209, 94%, 46%) 3px solid;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex; /* Membuat daftar menjadi flex container */
+    align-items: center; /* Mengatur item di tengah secara vertikal */
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Efek transisi warna saat dihover */
+}
+
+header nav ul li a:hover {
+    color: #f0f0f0; /* Warna berubah saat dihover */
+}
+
+
+header nav ul li:nth-child(3) a {
+    color: #fff;
+}
+
+
+section {
+    padding: 40px 0;
+}
+
+/* Style untuk slider */
+.slider {
+    position: relative;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 20px; /* Sesuaikan sesuai kebutuhan */
+    left: 20px; /* Sesuaikan sesuai kebutuhan */
+    color: white; /* atau warna apapun yang cocok dengan desain Anda */
+    font-size: 24px; /* Sesuaikan sesuai kebutuhan */
+    z-index: 10;
+}
+
+  
+  .slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide {
+    width: 20%;
+    transition: 0.5s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  /* Menghilangkan radio buttons */
+  input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 10px; /* Sesuaikan jarak ke bawah sesuai kebutuhan */
+    text-align: center;
+    z-index: 10;
+}
+.navigation-manual .manual-btn {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    /* Tambahkan lebih banyak styling sesuai dengan kebutuhan desain Anda */
+}
+  
+  .manual-btn {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover {
+    background: #40D3DC;
+  }
+  
+
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    text-align: left; /* Menata teks keterangan proyek */
+}
+
+.project-info h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #666;
+}
+
+.tools-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+
+.tool {
+    text-align: center;
+}
+
+.tool img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.tool p {
+    font-weight: bold;
+}
+
+
+.contact-info {
+    list-style-type: none;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #07a4ff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #777;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        padding-top: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
